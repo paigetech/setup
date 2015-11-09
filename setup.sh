@@ -3,10 +3,11 @@
 # 0) Update
 chmod +x update.sh
 ./update.sh
+cp update.sh ~/update.sh
 
 # 1) Basics
-sudo apt-get install update
-sudo apt-get install wget curl vim build-essential htop
+sudo apt-get update
+sudo apt-get install wget curl vim build-essential htop guake
 
 # 2) Compilers and runtimes
 sudo apt-get install g++
@@ -29,7 +30,7 @@ sudo add-apt-repository ppa:tualatrix/ppa -y
 sudo add-apt-repository ppa:noobslab/icons -y
 sudo apt-get update
 sudo apt-get install ubuntu-tweak ultra-flat-icons
-mkdir ~/.themes
+mkdir -p ~/.themes
 
 # 6) Bash and vim
 cp .bashrc ~/.bashrc

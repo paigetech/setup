@@ -41,3 +41,5 @@ cp -r .vim ~/.vim
 git clone https://github.com/jarun/google-cli/
 cd google-cli
 sudo make install
+cd ..
+rm -rf google-cli

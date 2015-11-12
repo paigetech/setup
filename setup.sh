@@ -20,6 +20,14 @@ cp git-completion.bash ~/git-completion.bash
 cp git-prompt.sh ~/git-prompt.sh
 git config --global user.name "Federico Menozzi"
 git config --global user.email "federicogmenozzi@gmail.com"
+git config --global core.editor vim
+git config --global alias.co "checkout"
+git config --global alias.cm "commit"
+git config --global alias.br "branch"
+git config --global alias.unstash "stash pop"
+git config --global alias.discard "checkout --"
+git config --global alias.last "log -1 HEAD"
+git config --global alias.unstage "reset HEAD --"
 
 # 4) Python and related tools
 sudo apt-get install python-pip python-dev -y

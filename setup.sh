@@ -18,9 +18,11 @@ sudo apt-get install openjdk-8-jdk
 # 3) Git
 cp git-completion.bash ~/git-completion.bash
 cp git-prompt.sh ~/git-prompt.sh
+cp .gitignore_global ~/.gitignore_global
 git config --global user.name "Federico Menozzi"
 git config --global user.email "federicogmenozzi@gmail.com"
 git config --global core.editor vim
+git config --global core.excludesfile ~/.gitignore_global
 git config --global alias.co "checkout"
 git config --global alias.cm "commit"
 git config --global alias.br "branch"

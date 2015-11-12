@@ -27,6 +27,10 @@ alias chrome='google-chrome-stable'
 alias g='googler'
 alias j='jobs'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 set -o vi
 
 # If not running interactively, don't do anything

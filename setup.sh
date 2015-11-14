@@ -14,6 +14,7 @@ sudo apt-get install g++
 sudo add-apt-repository ppa:openjdk-r/ppa -y
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
+curl -sf -L https://static.rust-lang.org/rustup.sh | sh
 
 # 3) Git
 cp git-completion.bash ~/git-completion.bash

@@ -54,3 +54,34 @@ cd google-cli
 sudo make install
 cd ..
 rm -rf google-cli
+sudo apt-get install youtube-dl
+
+##maxium awesome needs work
+#probably just add dotfiles here and link?
+
+#solarized
+git clone https://github.com/sgerrand/xfce4-terminal-colors-solarized.git
+cd xfce4-terminal-colors-solarized
+cp dark/terminalrc ~/.config/xfce4/terminal/terminalrc
+cd ..
+rm -rf xfce4-terminal-colors-solarized
+
+#chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+
+#albert
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install albert
+
+# Download the repository.
+git clone git://github.com/VitaliyRodnenko/geeknote.git
+cd geeknote
+sudo python setup.py install
+cd ..
+
+
+

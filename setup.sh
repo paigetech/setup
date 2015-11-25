@@ -7,7 +7,7 @@ cp update.sh ~/update.sh
 
 # 1) Basics
 sudo apt-get update
-sudo apt-get install wget curl vim build-essential htop guake tree valgrind ubuntu-restricted-extras
+sudo apt-get install -y wget curl vim build-essential htop guake tree valgrind ubuntu-restricted-extras libyaml-perl
 
 # 2) Compilers and runtimes
 sudo apt-get install g++
@@ -77,11 +77,18 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install albert
 
-# Download the repository.
+# Geeknote
 git clone git://github.com/VitaliyRodnenko/geeknote.git
 cd geeknote
 sudo python setup.py install
 cd ..
 
+#self control
+wget http://svn.jklmnop.net/projects/SelfControl/selfcontrol_0.9-1_all.deb
+sudo dpkg --install selfcontrol_0.9-1_all.deb
 
+#flux
+sudo add-apt-repository ppa:kilian/f.lux
+sudo apt-get update
+sudo apt-get install fluxgui
 

@@ -92,3 +92,13 @@ sudo add-apt-repository ppa:kilian/f.lux
 sudo apt-get update
 sudo apt-get install fluxgui
 
+#spotify
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client
+
+#dropbox
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
+sudo apt-get update && sudo apt-get install dropbox
